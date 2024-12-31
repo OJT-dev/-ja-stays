@@ -1,7 +1,8 @@
 {
   "name": "ja-stays",
   "version": "1.0.0",
-  "description": "Jamaican vacation rental platform",
+  "private": true,
+  "description": "Proprietary Jamaican vacation rental platform",
   "main": "src/index.ts",
   "scripts": {
     "dev": "concurrently \"ts-node src/index.ts\" \"npm run frontend\"",
@@ -48,5 +49,7 @@
   },
   "engines": {
     "node": ">=16.0.0"
-  }
+  },
+  "author": "JA Stays",
+  "license": "UNLICENSED"
 }

@@ -1,21 +1,90 @@
 # JA Stays Technology Stack
 
-## Core Technologies
-- **Language**: TypeScript
-- **Frontend**: React (with Vite)
-- **Testing**: Jest
-- **Linting**: ESLint + Prettier (Airbnb style guide)
+## Frontend
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Router**: React Router v6
+- **Styling**: CSS Modules + Global CSS
+- **State Management**: React Hooks
 
-## Build Tools
-- **Package Manager**: npm
-- **Bundler**: Vite
-- **Type Checking**: TypeScript
+## Backend
+- **Runtime**: Node.js
+- **Framework**: Express.js
+- **API**: RESTful endpoints
+- **Database**: In-memory store (to be replaced with MongoDB)
 
 ## AI Services
-- **Dynamic Pricing**: src/services/ai/pricing.ts
-- **Chatbot**: src/services/ai/chatbot.ts
+- **Property Matching**: Custom algorithm in TypeScript
+- **Dynamic Pricing**: AI-powered pricing model
+- **Chatbot**: Basic implementation (to be enhanced)
+
+## Development Tools
+- **Language**: TypeScript 5.0+
+- **Package Manager**: npm
+- **Code Quality**:
+  - ESLint with Airbnb config
+  - Prettier
+  - TypeScript strict mode
+- **Testing**:
+  - Jest for unit testing
+  - React Testing Library (planned)
+  - Cypress for E2E testing (planned)
+
+## Build & Deployment
+- **Bundler**: Vite
+- **Development Server**: Vite Dev Server
+- **API Proxy**: Vite proxy configuration
+- **Static Files**: Public directory for images
 
 ## Project Structure
-- **Source Code**: src/
-- **Tests**: tests/
-- **Documentation**: docs/ and cline_docs/
+```
+ja-stays/
+├── src/
+│   ├── api/           # API service layer
+│   ├── components/    # Reusable React components
+│   ├── pages/         # Page components
+│   ├── services/      # Business logic & AI services
+│   ├── models/        # TypeScript interfaces
+│   └── lib/          # Utility functions
+├── public/           # Static assets
+├── tests/           # Test files
+└── docs/            # Documentation
+```
+
+## Code Style Guidelines
+- Airbnb JavaScript/TypeScript Style Guide
+- CSS Modules for component styling
+- BEM methodology for class naming
+- Responsive design principles
+- Mobile-first approach
+
+## Browser Support
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- Mobile browsers
+- No IE11 support
+
+## Performance Considerations
+- Code splitting with React.lazy()
+- Image optimization
+- Lazy loading for images
+- CSS Modules for scoped styling
+- Minimal bundle size
+
+## Security
+- Input validation
+- CORS configuration
+- Secure payment handling (planned)
+- User authentication (planned)
+
+## Monitoring & Analytics (Planned)
+- Error tracking
+- Performance monitoring
+- User analytics
+- A/B testing capability
+
+## Future Considerations
+- GraphQL implementation
+- Server-side rendering
+- Progressive Web App features
+- Internationalization support
+- Accessibility improvements
