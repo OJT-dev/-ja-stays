@@ -1,0 +1,93 @@
+# .clinerules — JA Stays Project
+
+Below are **project-specific guidelines** that tailor Cline’s behavior and operations for the JA Stays project. Place this file in the **root** of your repository. Cline will reference it to maintain consistency, clarity, and best practices throughout the development lifecycle.
+
+---
+
+## 1. Code Conventions
+
+- **Primary Language**: TypeScript  
+- **Style Guide**: [Airbnb JavaScript/TypeScript Style Guide](https://github.com/airbnb/javascript)  
+- **Linting/Formatting**: Use ESLint + Prettier integrations aligned with Airbnb rules  
+- **Indentation**: 2 spaces  
+- **Line Length**: 100 characters max  
+
+**Additional Notes**:  
+
+- Prefer named exports over default exports where possible.  
+- Use descriptive function and variable names that reflect Jamaican or domain context (e.g., `montegoBayListings()`).  
+
+---
+
+## 2. Project Structure
+
+ja-stays/ ├─ src/ │ ├─ api/ (Back-end logic, e.g., listing & booking endpoints) │ ├─ components/ (Front-end React components) │ ├─ lib/ (Helper libraries, utility functions) │ ├─ models/ (Database schema & ORM models) │ ├─ services/ (Business logic, external API calls) │ └─ index.ts (Main entry point) ├─ tests/ │ └─ unit/ (Unit tests per module) ├─ dist/ (Build output) ├─ docs/ (Project documentation) ├─ .clinerules (This file)
+markdown
+Copy code
+
+- **Source Directory**: `src/` for all production code (both front-end and back-end modules).  
+- **Tests Directory**: `tests/`; subfolders for unit, integration, and e2e tests as needed.  
+- **Build Output**: `dist/` or a similarly designated folder after compilation.  
+
+---
+
+## 3. Documentation
+
+- **Documentation Format**: JSDoc (for TypeScript, TSDoc-style comments are acceptable)  
+- **Location**: Place high-level project docs (technical architecture, AI modules, Jamaican tourism details) in `docs/`.  
+- **In-Code Comments**: Provide explanatory inline or block comments where domain-specific logic (e.g., dynamic pricing for Jamaican holidays) might be non-obvious.
+
+---
+
+## 4. Testing
+
+- **Test Framework**: Jest  
+- **Coverage**: Strive for **90%+** coverage across statements, branches, and functions.  
+- **Naming Convention**: `*.test.ts` or `*.spec.ts`  
+- **Test Organization**:  
+  - **Unit Tests**: Validate isolated functionality in `tests/unit/` or alongside relevant modules.  
+  - **Integration/E2E Tests**: If using Cypress or Playwright, place them in a dedicated `tests/e2e/` directory.
+
+---
+
+## 5. Build & Deployment
+
+- **Package Manager**: npm  
+- **Node Version**: `>= 16.x`  
+- **Build Scripts**:  
+  - `npm run build`: Compile TypeScript, produce output in `dist/`  
+  - `npm run dev`: Start local dev server (e.g., if using Next.js or Node server)  
+- **Environment Config**: Store `.env` with Jamaican or environment-specific variables (e.g., currency symbol, local payment gateway keys).
+
+---
+
+## 6. AI & Data Guidelines
+
+- **AI Modules**:  
+  - Keep AI-specific code (pricing, recommendations, chatbots) within `src/services/ai/` or a similarly named folder.  
+  - Document each model’s purpose and input/ output shapes in `docs/ai/`.
+- **Data Privacy**:  
+  - For Jamaican hosts and travelers, ensure compliance with relevant privacy laws (GDPR if applicable, local Jamaican regulations).  
+  - Avoid storing personally sensitive data unencrypted in the repository or logs.
+
+---
+
+## 7. Additional Notes
+
+1. **Commit Messages**:  
+   - Use concise, descriptive messages (e.g., `[feat] Add dynamic pricing for Montego Bay properties`).  
+   - Reference issue or ticket IDs where relevant (`#123` or `[JASTAYS-45]`).
+2. **Dependencies**:  
+   - Keep dependencies updated regularly.  
+   - Avoid adding non-essential packages; prefer well-maintained libraries.
+3. **Localization**:  
+   - Plan for Jamaican English as default.  
+   - Eventually expand to multi-language support (French, Spanish) if scaling beyond Jamaica.
+4. **Performance & Scalability**:  
+   - Consider caching frequently accessed Jamaican travel data or local holiday schedules for dynamic pricing.  
+   - Use lazy loading or code splitting for large front-end bundles.
+
+---
+
+**Placement**: Put this file, named `.clinerules`, at the **root** of the `ja-stays` project so Cline references it for all coding, documentation, and testing guidelines. By conforming to these project-specific rules, developers will maintain consistency, clarity, and best practices throughout the JA Stays project.
+

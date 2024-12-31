@@ -1,0 +1,201 @@
+.container {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.heroContent {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.heroContent h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroContent p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.exploreButton {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #ff385c;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.exploreButton:hover {
+  background-color: #e60023;
+}
+
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.destinations {
+  background-color: #f7f7f7;
+}
+
+.destinations h2,
+.features h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.destinationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.destinationCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.destinationCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.destinationImage {
+  height: 200px;
+  overflow: hidden;
+}
+
+.destinationImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.destinationCard:hover .destinationImage img {
+  transform: scale(1.05);
+}
+
+.destinationInfo {
+  padding: 20px;
+}
+
+.destinationInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.destinationInfo p {
+  color: #717171;
+  line-height: 1.5;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.featureCard {
+  text-align: center;
+  padding: 32px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.featureCard p {
+  color: #717171;
+  line-height: 1.6;
+}
+
+.cta {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #ff385c;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.ctaButton:hover {
+  background-color: #e60023;
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent p {
+    font-size: 1.2rem;
+  }
+
+  .sectionContainer {
+    padding: 40px 20px;
+  }
+
+  .destinations h2,
+  .features h2,
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .destinationGrid,
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+}

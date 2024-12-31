@@ -1,0 +1,135 @@
+.property-listing {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.preferences-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.property-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+}
+
+.property-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.superhost-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.property-details {
+  padding: 16px;
+}
+
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.property-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.property-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.star {
+  color: #ff385c;
+}
+
+.reviews {
+  color: #717171;
+}
+
+.property-location {
+  margin: 4px 0;
+  color: #717171;
+  font-size: 14px;
+}
+
+.property-type {
+  margin: 4px 0;
+  color: #222222;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.property-price {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.per-night {
+  color: #717171;
+}
+
+.match-score {
+  margin: 8px 0;
+  padding: 4px 8px;
+  background: #f8f8f8;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #222222;
+}
+
+.view-details {
+  width: 100%;
+  padding: 8px;
+  background: #ff385c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.view-details:hover {
+  background: #e60023;
+}
