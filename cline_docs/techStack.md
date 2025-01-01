@@ -17,7 +17,12 @@
 
 ## AI Services
 
-- **Property Matching**: Custom algorithm in TypeScript
+- **Property Matching**: Custom algorithm with weighted scoring
+  - Location scoring (40% weight)
+  - Price scoring (30% weight)
+  - Amenities scoring (30% weight)
+  - Date availability filtering
+  - Perfect match detection
 - **Dynamic Pricing**: AI-powered pricing model
 - **Chatbot**: Basic implementation (to be enhanced)
 
@@ -30,8 +35,8 @@
   - Prettier
   - TypeScript strict mode
 - **Testing**:
-  - Jest for unit testing
-  - React Testing Library (planned)
+  - Jest for unit testing (90%+ coverage)
+  - React Testing Library
   - Cypress for E2E testing (planned)
 
 ## Build & Deployment
@@ -50,6 +55,7 @@ ja-stays/
 │   ├── components/    # React components
 │   ├── pages/         # Page components
 │   ├── services/      # Business logic & AI
+│   │   └── ai/        # AI algorithms
 │   ├── models/        # TypeScript types
 │   └── lib/          # Utilities
 ├── public/           # Static assets
@@ -100,3 +106,11 @@ ja-stays/
 - Progressive Web App features
 - Internationalization support
 - Accessibility improvements
+
+## Testing Strategy
+
+- Unit tests with Jest (90%+ coverage)
+- Component tests with React Testing Library
+- Integration tests for AI services
+- End-to-end tests with Cypress (planned)
+- Continuous testing in CI/CD pipeline

@@ -1,0 +1,172 @@
+.dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.addPropertyBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.addPropertyBtn:hover {
+  background-color: #0056b3;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.statCard {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.statCard h3 {
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.statCard p {
+  color: #212529;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.properties {
+  margin-top: 2rem;
+}
+
+.properties h2 {
+  margin-bottom: 1.5rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.emptyState p {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.propertyList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.propertyCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.propertyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.propertyHeader h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.active {
+  background-color: #28a745;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+}
+
+.pending {
+  background-color: #ffc107;
+  color: #212529;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+}
+
+.inactive {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+}
+
+.propertyDetails {
+  margin-bottom: 1.5rem;
+}
+
+.propertyDetails p {
+  margin: 0.5rem 0;
+  color: #6c757d;
+}
+
+.propertyActions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.propertyActions button {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: white;
+  color: #212529;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.propertyActions button:hover {
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .propertyList {
+    grid-template-columns: 1fr;
+  }
+
+  .propertyActions {
+    flex-direction: column;
+  }
+}
