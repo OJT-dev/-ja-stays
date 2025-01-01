@@ -66,7 +66,7 @@ For authorized developers only. Please ensure you have signed the necessary agre
 npm install
 ```
 
-2. Start the development servers:
+1. Start the development servers:
 
 ```bash
 # Start both frontend and backend
