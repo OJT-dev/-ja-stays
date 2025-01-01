@@ -28,7 +28,7 @@ This repository is made public for reference and educational purposes only. The 
 
 ## Project Structure
 
-```
+```text
 ja-stays/
 ├── src/
 │   ├── api/           # API service layer
@@ -61,11 +61,13 @@ For authorized developers only. Please ensure you have signed the necessary agre
 ### Installation
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
 2. Start the development servers:
+
 ```bash
 # Start both frontend and backend
 npm run dev
@@ -77,7 +79,7 @@ npm run frontend
 npm run dev:backend
 ```
 
-The frontend will be available at http://localhost:5173 and the backend at http://localhost:3000.
+The frontend will be available at `http://localhost:5173` and the backend at `http://localhost:3000`.
 
 ### Available Scripts
 

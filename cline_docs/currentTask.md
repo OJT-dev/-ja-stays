@@ -1,6 +1,7 @@
 # Current Task: Frontend Implementation and Enhancement
 
 ## Completed Work
+
 1. Set up project structure with Vite and TypeScript
 2. Implemented basic routing system
 3. Created and styled Navbar component
@@ -26,12 +27,14 @@
 10. Implemented responsive design
 
 ## Current Status
+
 - Basic functionality is working
 - Frontend components are styled similar to Airbnb
 - Backend API endpoints are defined
 - Image assets are in place
 
 ## Next Steps
+
 1. Add loading states and error handling to all API calls
 2. Implement user authentication system
 3. Add more property images and enhance image gallery
@@ -44,6 +47,7 @@
 10. Add user profile page
 
 ## Technical Debt
+
 - Need to add comprehensive error handling
 - Should implement proper TypeScript types for all components
 - Add more unit tests for components
@@ -52,6 +56,7 @@
 - Improve code documentation
 
 ## Related Files
+
 - src/pages/HomePage.tsx
 - src/pages/PropertyListingPage.tsx
 - src/pages/PropertyDetailPage.tsx
