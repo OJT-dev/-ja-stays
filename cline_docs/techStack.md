@@ -4,9 +4,24 @@
 
 - **Framework**: React 18 with TypeScript
 - **Build Tool**: Vite
-- **Router**: React Router v6
+- **Router**: React Router v6 (HashRouter for mobile)
 - **Styling**: CSS Modules + Global CSS
 - **State Management**: React Hooks
+
+## Mobile App
+
+- **Framework**: Capacitor
+- **Platform**: Android
+- **WebView**: Modern WebView with:
+  - Hardware acceleration
+  - Image caching (Glide)
+  - File access handling
+  - DOM storage
+  - Modern web features
+- **Dependencies**:
+  - androidx.webkit
+  - Glide for image loading
+  - OkHttp for networking
 
 ## Backend
 
@@ -38,19 +53,22 @@
   - Jest for unit testing (90%+ coverage)
   - React Testing Library
   - Cypress for E2E testing (planned)
+  - Babel for test file transformation
 
 ## Build & Deployment
 
-- **Bundler**: Vite
+- **Web Bundler**: Vite
+- **Mobile Build**: Android Studio + Gradle
 - **Development Server**: Vite Dev Server
 - **API Proxy**: Vite proxy configuration
 - **Static Files**: Public directory for images
+- **Mobile Assets**: Android resource directories
 
 ## Project Structure
 
 ```text
 ja-stays/
-├── src/
+├── src/                # Web source code
 │   ├── api/           # API service layer
 │   ├── components/    # React components
 │   ├── pages/         # Page components
@@ -58,6 +76,11 @@ ja-stays/
 │   │   └── ai/        # AI algorithms
 │   ├── models/        # TypeScript types
 │   └── lib/          # Utilities
+├── android/          # Android app
+│   ├── app/          # Android application
+│   │   ├── src/      # Android source
+│   │   └── res/      # Android resources
+│   └── gradle/       # Gradle configuration
 ├── public/           # Static assets
 ├── tests/           # Test files
 └── docs/            # Documentation
@@ -71,10 +94,11 @@ ja-stays/
 - Responsive design principles
 - Mobile-first approach
 
-## Browser Support
+## Browser & Platform Support
 
 - Modern browsers (Chrome, Firefox, Safari, Edge)
 - Mobile browsers
+- Android WebView (API 22+)
 - No IE11 support
 
 ## Performance Considerations
@@ -84,6 +108,8 @@ ja-stays/
 - Lazy loading for images
 - CSS Modules for scoped styling
 - Minimal bundle size
+- Mobile hardware acceleration
+- Efficient caching strategies
 
 ## Security
 
@@ -91,6 +117,8 @@ ja-stays/
 - CORS configuration
 - Secure payment handling (planned)
 - User authentication (planned)
+- File access permissions
+- WebView security configuration
 
 ## Monitoring & Analytics (Planned)
 
@@ -98,6 +126,7 @@ ja-stays/
 - Performance monitoring
 - User analytics
 - A/B testing capability
+- Mobile app analytics
 
 ## Future Considerations
 
@@ -106,6 +135,8 @@ ja-stays/
 - Progressive Web App features
 - Internationalization support
 - Accessibility improvements
+- iOS support
+- Offline capabilities
 
 ## Testing Strategy
 
@@ -113,4 +144,5 @@ ja-stays/
 - Component tests with React Testing Library
 - Integration tests for AI services
 - End-to-end tests with Cypress (planned)
+- Mobile app testing
 - Continuous testing in CI/CD pipeline
